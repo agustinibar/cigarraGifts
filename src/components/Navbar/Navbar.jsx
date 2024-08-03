@@ -2,6 +2,10 @@ import { Link } from 'react-router-dom';
 import styles from './navbar.module.css';
 
 const Navbar = () => {
+
+  if(location.pathname === "/"){
+    return null
+  }
   return (
     <nav className={styles.navbar}>
       <Link to="/home" className={styles.brand}>Cigarra Gifts</Link>
