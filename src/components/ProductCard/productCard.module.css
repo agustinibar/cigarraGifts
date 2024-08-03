@@ -1,0 +1,33 @@
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  border: 1px solid #C9B2CF;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #EDEDED;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.name {
+  color: #815288;
+  margin: 0.5rem 0;
+}
+
+.price {
+  color: #F9B95F;
+  font-weight: bold;
+}

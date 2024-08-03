@@ -1,0 +1,39 @@
+.homePage {
+    text-align: center;
+  }
+  
+  .heroSection {
+    padding: 2rem;
+    background-color: #F4E68E;
+    color: #815288;
+  }
+  
+  .heroSection h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .heroSection p {
+    font-size: 1.2rem;
+  }
+  
+  .productsSection {
+    padding: 2rem;
+  }
+  
+  .productsSection h2 {
+    color: #815288;
+    margin-bottom: 1rem;
+  }
+  
+  .productsGrid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .footer {
+    padding: 1rem;
+    background-color: #E5EAD9;
+    color: #815288;
+  }
+  

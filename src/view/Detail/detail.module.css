@@ -1,0 +1,42 @@
+.productDetail {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .image {
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .name {
+    color: #815288;
+    margin-bottom: 1rem;
+  }
+  
+  .price {
+    color: #F9B95F;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    color: #333;
+    margin-bottom: 1rem;
+  } 
+ 
+  .addButton {
+    background-color: #815288;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addButton:hover {
+    background-color: #6b3d6f;
+  }
+  

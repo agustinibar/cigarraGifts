@@ -1,0 +1,47 @@
+.authContainer {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #EDEDED;
+    border: 1px solid #C9B2CF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .authForm h2 {
+    margin-bottom: 1rem;
+    color: #815288;
+  }
+  
+  .authForm input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #C9B2CF;
+    border-radius: 4px;
+  }
+  
+  .authForm button {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background-color: #F9B95F;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .authForm button:hover {
+    background-color: #F4E68E;
+  }
+  
+  .authForm p {
+    cursor: pointer;
+    color: #815288;
+  }
+  
+  .authForm p:hover {
+    text-decoration: underline;
+  }
+  
