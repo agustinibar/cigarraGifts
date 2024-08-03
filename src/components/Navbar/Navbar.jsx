@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styles from './navbar.module.css';
 
 const Navbar = () => {
+const location = useLocation();
 
   if(location.pathname === "/"){
     return null
