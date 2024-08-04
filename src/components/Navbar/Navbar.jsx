@@ -12,6 +12,8 @@ const location = useLocation();
       <Link to="/home" className={styles.brand}>Cigarra Gifts</Link>
       <div className={styles.links}>
         <Link to="/home">Inicio</Link>
+        <Link to="/profile">Perfil</Link>
+        <Link to="/admin/*">Admin</Link>
         <Link to="/cart">Carrito</Link>
         <Link to="/">Log Out</Link>
       </div>

@@ -1,0 +1,17 @@
+.adminNavbar {
+    background-color: #F9B95F;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navLink {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navLink:hover {
+    color: #E5EAD9;
+  }
+  

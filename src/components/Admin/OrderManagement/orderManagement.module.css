@@ -1,0 +1,20 @@
+.orderManagement {
+    padding: 2rem;
+  }
+  
+  .orderList {
+    margin-top: 2rem;
+  }
+  
+  .orderItem {
+    background-color: #F5F5F5;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .orderItem select {
+    margin-top: 0.5rem;
+  }
+  
