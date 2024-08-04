@@ -3,7 +3,7 @@
   }
   
   .heroSection {
-    padding: 2rem;
+    padding: 3rem;
     background-color: #F4E68E;
     color: #815288;
   }
@@ -36,4 +36,11 @@
     background-color: #E5EAD9;
     color: #815288;
   }
-  
+
+  .logo{
+    position: absolute;
+    left: 50px;
+    top: 75px;
+    width: 175px;
+    border-radius: 50%;
+  }

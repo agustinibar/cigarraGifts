@@ -1,5 +1,6 @@
 import  ProductCard  from '../../components/ProductCard/ProductCard';
 import styles from './home.module.css';
+import logo from '../../assets/logo.png';
 
 const products = [
   {
@@ -29,6 +30,7 @@ const Home = () => {
   return (
     <div className={styles.homePage}>
       <header className={styles.heroSection}>
+        <img src={logo} alt="" className={styles.logo}/>
         <h1>Bienvenido a Cigarra Gifts</h1>
         <p>Descubre el regalo perfecto para cualquier ocasión</p>
       </header>
