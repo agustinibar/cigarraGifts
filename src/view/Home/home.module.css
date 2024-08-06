@@ -1,46 +1,74 @@
 .homePage {
-    text-align: center;
-  }
-  
-  .heroSection {
-    padding: 3rem;
-    background-color: #F4E68E;
-    color: #815288;
-  }
-  
-  .heroSection h1 {
-    margin-bottom: 1rem;
-  }
-  
-  .heroSection p {
-    font-size: 1.2rem;
-  }
-  
-  .productsSection {
-    padding: 2rem;
-  }
-  
-  .productsSection h2 {
-    color: #815288;
-    margin-bottom: 1rem;
-  }
-  
-  .productsGrid {
+  text-align: center;
+}
+
+.heroSection {
+  padding: 3rem;
+  background-color: #F4E68E;
+  color: #815288;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroSection h1 {
+  margin-bottom: 1rem;
+}
+
+.heroSection p {
+  font-size: 1.2rem;
+}
+
+.productsSection {
+  padding: 2rem;
+}
+
+.productsSection h2 {
+  color: #815288;
+  margin-bottom: 1rem;
+}
+
+.productsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer {
+  padding: 1rem;
+  background-color: #E5EAD9;
+  color: #815288;
+}
+
+.logo {
+  position: absolute;
+  left: 50px;
+  top: 75px;
+  width: 175px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .homePage{
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .footer {
-    padding: 1rem;
-    background-color: #E5EAD9;
-    color: #815288;
+  .logo{
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  .heroSection {
+    padding: 2rem;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
   }
 
-  .logo{
-    position: absolute;
-    left: 50px;
-    top: 75px;
-    width: 175px;
-    border-radius: 50%;
+  .productsGrid {
+    flex-direction: column;
+    align-items: center;
   }
+}

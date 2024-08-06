@@ -56,3 +56,18 @@
 .removeButton:hover {
   background-color: #d8843f;
 }
+
+@media (max-width: 768px) {
+  .cartItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image {
+    margin-bottom: 0.5rem;
+  }
+
+  .details {
+    margin-left: 0;
+  }
+}

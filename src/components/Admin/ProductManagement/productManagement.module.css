@@ -48,3 +48,12 @@
     cursor: pointer;
   }
   
+  @media (max-width: 768px) {
+    .productItem {
+      padding: 0.5rem;
+    }
+  
+    .productItem button {
+      padding: 0.5rem 1rem;
+    }
+  }

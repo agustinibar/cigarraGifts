@@ -1,9 +1,10 @@
+
 .navbar {
+  background-color: #E5EAD9;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #E5EAD9;
 }
 
 .brand {
@@ -11,6 +12,10 @@
   font-weight: bold;
   color: #815288;
   text-decoration: none;
+}
+.links {
+  display: flex;
+  gap: 1rem;
 }
 
 .links a {
@@ -21,4 +26,11 @@
 
 .links a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }

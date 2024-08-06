@@ -46,3 +46,9 @@
 .editButton:hover, .saveButton:hover, .cancelButton:hover {
   background-color: #d8843f;
 }
+
+@media (max-width: 768px) {
+  .editForm input {
+    width: 90%;
+  }
+}
