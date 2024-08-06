@@ -32,7 +32,7 @@ const Home = () => {
     <div className={styles.homePage}>
       <header className={styles.heroSection}>
         <img src={logo} alt="Cigarra Gifts Logo" className={styles.logo} />
-        <h1>Bienvenido a Cigarra Gifts</h1>
+        <h1>Bienvenidos a Cigarra Gifts!</h1>
         <p>Descubre el regalo perfecto para cualquier ocasión</p>
       </header>
       <section className={styles.productsSection}>
