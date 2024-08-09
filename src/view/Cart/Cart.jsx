@@ -1,12 +1,34 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { CartContext } from '../../CartContext';
+import { db, auth } from '../../firebase/config'; 
+import { doc, getDoc, updateDoc } from 'firebase/firestore';
 import styles from './cart.module.css';
 
 const Cart = () => {
-  const { cart, removeFromCart } = useContext(CartContext);
+  const { cart, setCart, removeFromCart } = useContext(CartContext);
 
-  const handleRemove = (productId) => {
-    removeFromCart(productId);
+  useEffect(() => {
+    const fetchCart = async () => {
+      if (auth.currentUser) {
+        const cartRef = doc(db, 'carts', auth.currentUser.uid);
+        const cartSnap = await getDoc(cartRef);
+        if (cartSnap.exists()) {
+          setCart(cartSnap.data().items || []);
+        }
+      }
+    };
+
+    fetchCart();
+  }, [setCart]);
+
+  const handleRemove = async (productId) => {
+    const updatedCart = cart.filter((product) => product.id !== productId);
+    setCart(updatedCart);
+
+    if (auth.currentUser) {
+      const cartRef = doc(db, 'carts', auth.currentUser.uid);
+      await updateDoc(cartRef, { items: updatedCart });
+    }
   };
 
   const totalItems = cart.length;
@@ -22,7 +44,7 @@ const Cart = () => {
           <div className={styles.cartItems}>
             {cart.map((product, index) => (
               <div key={index} className={styles.cartItem}>
-                <img src={product.image} alt={product.name} className={styles.image} />
+                <img src={product.imageUrl} alt={product.name} className={styles.image} />
                 <div className={styles.details}>
                   <h3 className={styles.name}>{product.name}</h3>
                   <p className={styles.price}>${product.price}</p>
